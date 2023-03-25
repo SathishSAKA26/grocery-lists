@@ -48,8 +48,13 @@ html {
 }
 
 body {
+  width: 100%;
+  height: 100vh;
   font-family: "Fira Sans Condensed", sans-serif;
-  background-color: var(--clr-white);
+  background-color: var(--clr-grey-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* global css */
@@ -65,4 +70,99 @@ a {
 
 li {
   list-style: none;
+}
+
+.main-container {
+  width: 80%;
+  min-height: 20vh;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 4px 4px 20px var(--clr-white);
+  background-color: var(--clr-white);
+}
+
+.grocery-from {
+  padding: 1rem;
+}
+
+.alert {
+  font-size: 1.3rem;
+  padding-top: 0.2rem;
+  text-transform: uppercase;
+  border-radius: 6px;
+}
+
+.alert-danger {
+  color: var(--clr-white);
+  background-color: var(--clr-red-dark);
+}
+
+.alert-success {
+  color: var(--clr-white);
+  background-color: var(--clr-green-dark);
+}
+
+.form-conte input {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 2px 3rem;
+  border-radius: 3px;
+  border: none;
+  background-color: var(--clr-primary-6);
+}
+
+.submit-btn {
+  font-size: 1.2rem;
+  padding: 2px 0.5rem;
+  background-color: var(--clr-primary-6);
+  border: none;
+  border-radius: 3px;
+}
+
+.grocery-container {
+  margin: 1rem;
+  visibility: hidden;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--clr-red-light);
+  text-transform: uppercase;
+}
+
+.item {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.edit-btn,
+.delete-btn {
+  border: none;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.delete-btn {
+  color: var(--clr-red-dark);
+}
+
+.edit-btn {
+  color: var(--clr-green-dark);
+}
+
+.clear-btn {
+  margin: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--clr-red-dark);
+  border: none;
+  cursor: pointer;
+}
+
+.show-container {
+  visibility: visible;
 }

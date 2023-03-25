@@ -10,7 +10,7 @@
       href="./images/png-transparent-gold.png"
       type="image/x-icon"
     />
-    <title>Static - Boiler Plate</title>
+    <title>Grocery List</title>
     <!-- fontAwesome CDN -->
     <link
       rel="stylesheet"
@@ -26,7 +26,26 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <h1>Hello</h1>
+    <section class="main-container">
+      <!-- form container -->
+      <form class="grocery-from">
+        <p class="alert"></p>
+        <h2>Grocery List</h2>
+        <div class="form-conte">
+          <input type="text" id="grocery" placeholder="E.g. banana" />
+          <button class="submit-btn" type="submit">
+            <i class="fa-solid fa-bookmark"></i>
+          </button>
+        </div>
+      </form>
+      <!-- list -->
+      <div class="grocery-container">
+        <div class="grocery-list"></div>
+        <!-- clear button -->
+        <button class="clear-btn" type="button">Clear All</button>
+      </div>
+    </section>
+
     <!-- custom script -->
     <script src="./scripts/script.js"></script>
   </body>
